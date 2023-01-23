@@ -1,0 +1,156 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     font-family: arial, helvetica, sans-serif;
+     background-color: #ddd;
+     line-height: 1.65;
+     padding-bottom: 1000px;
+}
+
+/* latihan 1 */
+.container-satu {
+     width: 60%;
+     margin: 50px auto;
+     display: flex;
+     box-sizing: border-box;
+}
+
+.kolom-utama {
+     flex: 2;
+     order: 2;
+}
+.sidebar-satu {
+     flex: 1;
+     order: 1;
+}
+
+.sidebar-dua {
+     flex: 1;
+     order: 3;
+}
+
+/* latihan 2 */
+.container-dua {
+     width: 60%;
+     margin: 50px auto;
+     display: flex;
+     justify-content: space-between;
+}
+
+.layanan {
+     width: 30%;
+     margin: 10px auto;
+     padding: 20px;
+     box-sizing: border-box;
+}
+
+.layanan.satu {
+     background-color: rgb(115, 84, 255);
+}
+.layanan.dua {
+     background-color: rgb(84, 255, 127);
+}
+.layanan.tiga {
+     background-color: rgb(255, 84, 84);
+}
+
+/* latihan 3 */
+.container-tiga {
+     width: 60%;
+     margin: 20px auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.container-tiga .thumbnail {
+     width: 25%;
+}
+.container-tiga .thumbnail img {
+     width: 100%;
+}
+
+/* latihan 4 */
+.container-empat {
+     width: 60%;
+     margin: 20px auto;
+     display: flex;
+     flex-wrap: wrap;
+}
+.card {
+     margin: 20px;
+     flex: 1;
+     border: 1px solid #bbb;
+     border-radius: 10px;
+     background-color: #eee;
+     overflow: hidden;
+}
+
+.card .header {
+     height: 150px;
+     background-color: #666;
+}
+
+.card .content {
+     text-align: center;
+     padding: 20px;
+}
+
+.container-lima {
+     width: 500px;
+     height: 500px;
+     margin: 50px auto;
+     border: 5px solid black;
+     display: flex;
+}
+
+.kotak {
+     width: 100px;
+     height: 100px;
+     background: brown;
+     color: white;
+     margin: auto;
+     display: flex;
+}
+
+.kotak p {
+     margin: auto;
+}
+
+/* responsive */
+
+@media (max-width: 1400px) {
+     .container-satu {
+          display: block;
+     }
+}
+
+@media (max-width: 960px) {
+     .container-dua {
+          display: block;
+     }
+
+     .layanan {
+          width: 100%;
+          padding: 20px;
+          margin-bottom: 20px;
+     }
+
+     .container-tiga .thumbnail {
+          width: 50%;
+     }
+
+     .container-empat {
+          width: 65%;
+          display: block;
+     }
+}
+
+@media (max-width: 600px) {
+     .container-tiga .thumbnail {
+          width: 100%;
+     }
+}
